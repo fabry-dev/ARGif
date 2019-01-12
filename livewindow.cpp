@@ -19,11 +19,11 @@
 #define OFFSETY 0
 
 
-#define PATH (QString)"/home/fred/Dropbox/Taf/Cassiopee/realAugGif/files/"
 
 
-liveWindow::liveWindow(QWidget *parent) :
-    QLabel(parent)
+
+liveWindow::liveWindow(QWidget *parent,QString PATH) :
+    QLabel(parent),PATH(PATH)
 {
 
     resize(1080,1920);
@@ -181,5 +181,5 @@ void liveWindow::doneConverting()
 
 liveWindow::~liveWindow()
 {
-    delete ui;
+
 }

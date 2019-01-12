@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 
     iw->setGeometry(screen1->geometry().x(),screen1->geometry().y(),1920,1080);
 
-    liveWindow *lw = new liveWindow(NULL);
+    liveWindow *lw = new liveWindow(NULL,PATH);
     lw->setGeometry(screen2->geometry().x(),screen2->geometry().y(),1080,1920);
     lw->showFullScreen();
 

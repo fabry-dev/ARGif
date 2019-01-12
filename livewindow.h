@@ -32,14 +32,14 @@ class liveWindow : public QLabel
     Q_OBJECT
 
 public:
-    explicit liveWindow(QWidget *parent = 0);
+    explicit liveWindow(QWidget *parent = 0, QString PATH="");
     ~liveWindow();
 
 protected:
 void keyPressEvent( QKeyEvent *k );
 
 private:
-    Ui::MainWindow *ui;
+    QString PATH;
     int imgDistance(cv::Vec3b src);
     QLabel *videoLbl,*countLbl;
     QPixmap videoPix;
