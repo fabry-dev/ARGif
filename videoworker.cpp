@@ -50,7 +50,7 @@ void videoWorker::process()
 {
 
 
-    VideoCapture stream(1);
+    VideoCapture stream(0);
 
     QString videoName = PATH+"water.mp4";
     QString alphaName = PATH+"waterA.mp4";
