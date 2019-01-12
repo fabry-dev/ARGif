@@ -79,8 +79,8 @@ int main(int argc, char *argv[])
     interfaceWindow *iw = new interfaceWindow(NULL,PATH);
 
 
-    QScreen* screen1 = a.screens().at(1);
-    QScreen* screen2 = a.screens().at(2);
+    QScreen* screen1 = a.screens().at(0);
+    QScreen* screen2 = a.screens().at(1);
 
     iw->setGeometry(screen1->geometry().x(),screen1->geometry().y(),1920,1080);
 
